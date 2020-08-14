@@ -1,6 +1,6 @@
-package social.db;
+package java.main.social.db;
 
-import social.model.User;
+import java.main.social.model.User;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

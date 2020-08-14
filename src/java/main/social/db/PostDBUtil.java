@@ -1,6 +1,6 @@
-package social.db;
+package java.main.social.db;
 
-import social.model.Post;
+import java.main.social.model.Post;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

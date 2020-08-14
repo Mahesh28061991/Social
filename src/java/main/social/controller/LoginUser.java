@@ -1,7 +1,7 @@
-package social.controller;
+package java.main.social.controller;
 
-import social.db.UserDBUtil;
-import social.model.User;
+import java.main.social.db.UserDBUtil;
+import java.main.social.model.User;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -24,7 +24,7 @@ public class LoginUser extends HttpServlet {
     }
 
 	
-	@Resource(name="jdbc/social")
+	@Resource(name="jdbc/java.main.social")
     private DataSource datasource;
     private UserDBUtil userdb;
 
