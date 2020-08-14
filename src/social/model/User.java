@@ -1,6 +1,6 @@
-package model;
+package social.model;
 
-import db.UserDBUtil;
+import social.db.UserDBUtil;
 
 public class User {
 	String fname;

@@ -1,6 +1,7 @@
-package controller;
+package social.controller;
 
-import java.io.IOException;
+import social.db.UserDBUtil;
+import social.model.User;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -11,9 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
-
-import db.UserDBUtil;
-import model.User;
+import java.io.IOException;
 
 @WebServlet("/LoginUser")
 public class LoginUser extends HttpServlet {

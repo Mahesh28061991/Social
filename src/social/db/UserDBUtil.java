@@ -1,13 +1,12 @@
-package db;
+package social.db;
+
+import social.model.User;
 
 import javax.sql.DataSource;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.sql.ResultSet;
-
-import model.User;
+import java.sql.Statement;
 
 public class UserDBUtil {
 	
