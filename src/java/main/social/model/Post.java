@@ -1,6 +1,6 @@
-package java.main.social.model;
+package social.model;
 
-import java.main.social.db.PostDBUtil;
+import social.db.PostDBUtil;
 
 import java.sql.Timestamp;
 import java.util.Date;

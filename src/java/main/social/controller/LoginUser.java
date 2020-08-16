@@ -1,7 +1,7 @@
-package java.main.social.controller;
+package social.controller;
 
-import java.main.social.db.UserDBUtil;
-import java.main.social.model.User;
+import social.db.UserDBUtil;
+import social.model.User;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -24,7 +24,7 @@ public class LoginUser extends HttpServlet {
     }
 
 	
-	@Resource(name="jdbc/java.main.social")
+	@Resource(name="jdbc/social")
     private DataSource datasource;
     private UserDBUtil userdb;
 
@@ -34,9 +34,10 @@ public class LoginUser extends HttpServlet {
     	super.init();
 		
 		try {
-			
-			userdb = new UserDBUtil(datasource);
-		
+
+//			userdb = new UserDBUtil(datasource);
+			userdb = new UserDBUtil();
+
 		} catch (Exception e) {
 			// TODO: handle exception
 			throw new ServletException(e);
@@ -44,22 +45,22 @@ public class LoginUser extends HttpServlet {
 	}
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+
 		HttpSession session = request.getSession();
 		String logemail = request.getParameter("logemail");
 		String logpassword = request.getParameter("logpassword");
-		
+
 		User tempUser = new User("","",logemail,logpassword);
-		
+
 		User returnedUser = new User();
-		
+
 		returnedUser = tempUser.loginUser(userdb);
-		
+
 		if(returnedUser!=null) {
 			if(logpassword.contentEquals(returnedUser.getPassword())) {
 				session.setAttribute("user", returnedUser);
-				response.sendRedirect("loginSuccess.jsp");
-			}	
+				response.sendRedirect("/views/wall.jsp");
+			}
 			else {
 				String result = "Invalid Username or Password!!";
 				request.setAttribute("result",result);
@@ -75,7 +76,7 @@ public class LoginUser extends HttpServlet {
 		    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(strViewPage);
 		    dispatcher.forward(request, response);
 		}
-	
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

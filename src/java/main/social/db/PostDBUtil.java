@@ -1,6 +1,6 @@
-package java.main.social.db;
+package social.db;
 
-import java.main.social.model.Post;
+import social.model.Post;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ public class PostDBUtil {
 
     // JDBC driver name and database URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/EMP";
+    static final String DB_URL = "jdbc:mysql://localhost/social";
 
     //  Database credentials
     static final String USER = "username";

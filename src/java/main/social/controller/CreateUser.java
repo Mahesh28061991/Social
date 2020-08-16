@@ -1,7 +1,7 @@
-package java.main.social.controller;
+package social.controller;
 
-import java.main.social.db.UserDBUtil;
-import java.main.social.model.User;
+import social.db.UserDBUtil;
+import social.model.User;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -29,7 +29,7 @@ public class CreateUser extends HttpServlet {
     }
     
     
-    @Resource(name="jdbc/java.main.social")
+    @Resource(name="jdbc/social")
     private DataSource datasource;
     private UserDBUtil userdb;
     
@@ -40,8 +40,9 @@ public class CreateUser extends HttpServlet {
 		super.init();
 		
 		try {
-			userdb = new UserDBUtil(datasource);
-		
+//			userdb = new UserDBUtil(datasource);
+			userdb = new UserDBUtil();
+
 		} catch (Exception e) {
 			// TODO: handle exception
 			throw new ServletException(e);
