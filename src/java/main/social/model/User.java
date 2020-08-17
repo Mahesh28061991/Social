@@ -3,12 +3,17 @@ package social.model;
 
 import social.db.UserDBUtil;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
+	int userId;
 	String fname;
 	String lname;
 	String email;
 	String password;
-	
+	List<User> friends;
+
 	public User() {
 		
 	}
@@ -17,6 +22,23 @@ public class User {
 		this.lname=lname;
 		this.email=email;
 		this.password=password;
+	}
+
+	public User(int userId, String fname, String lname, String email, String password) {
+		this.userId = userId;
+		this.fname=fname;
+		this.lname=lname;
+		this.email=email;
+		this.password=password;
+		this.friends = new ArrayList<>();
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getFname() {
@@ -51,6 +73,14 @@ public class User {
 		this.password = password;
 	}
 
+	public List<User> getFriends() {
+		return this.friends;
+	}
+
+	public void setFriends(List<User> friends) {
+		this.friends = friends;
+	}
+
 	public boolean createUser(UserDBUtil userdb) {
 		try {
 			 userdb.insertUser(this);
@@ -65,7 +95,7 @@ public class User {
 	public User loginUser(UserDBUtil userdb) {
 		try {
 			User tempUser = userdb.loginUser(this);
-			if(tempUser !=null ) {
+			if(tempUser != null ) {
 				return tempUser;
 			}
 		} catch (Exception e) {
@@ -73,6 +103,12 @@ public class User {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public void addFriend(int userId, int friendId){
+		//TODO add functionality to add friends through requests
+		UserDBUtil userDBUtil = new UserDBUtil();
+		userDBUtil.insertFriend(userId, friendId);
 	}
 	
 	

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Social:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,28 +25,43 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66184512-c38b-455f-bae4-51ad12bd1612" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Social.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Social.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="66184512-c38b-455f-bae4-51ad12bd1612" name="Default Changelist" comment="update sql script and successful signup and login functions">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Social_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/views/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/main/social/model/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/social/controller/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/controller/CreateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/social/controller/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/controller/LoginUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/social/db/PostDBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/db/PostDBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/social/db/UserDBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/db/UserDBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/social/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/social/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/views/wall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/views/homeFeed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/new_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/new_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/social/controller/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/controller/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/social/controller/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/controller/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/social/db/UserDBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/db/UserDBUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/social/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/social/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1g4iv9cE4gJR8k7ORIXAVXcP2gR" />
   <component name="ProjectLevelVcsManager">
@@ -53,19 +73,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WebContent/views" />
+      <recent name="$PROJECT_DIR$/WebContent" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WebContent/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -83,6 +112,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Social Spark" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Social:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Social" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62187" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Social:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597380493641</updated>
       <workItem from="1597447464659" duration="1259000" />
-      <workItem from="1597448815660" duration="548000" />
+      <workItem from="1597448815660" duration="33383000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1597381395157</created>
@@ -109,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597382310258</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modify project structure">
+      <created>1597449483725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597449483725</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update sql script and successful signup and login functions">
+      <created>1597594103397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597594103397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,28 +256,119 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="modify project structure" />
+    <MESSAGE value="update sql script and successful signup and login functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sql script and successful signup and login functions" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="31" key="#Project_Structure" timestamp="1597447799682">
+    <state x="208" y="23" width="1024" height="797" key="#Project_Structure" timestamp="1597623639869">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="31" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1597447799682" />
+    <state x="208" y="23" width="1024" height="797" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1597623639869" />
+    <state x="498" y="347" key="#Tomcat_Server" timestamp="1597452057994">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="498" y="347" key="#Tomcat_Server/0.0.1440.900@0.0.1440.900" timestamp="1597452057994" />
+    <state x="184" y="23" width="1071" height="797" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597453506148">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="23" width="1071" height="797" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1597453506148" />
+    <state x="533" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1597614961563">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1597614961563" />
+    <state x="458" y="183" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1597615787960">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="183" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597615787960" />
+    <state x="486" y="314" key="DetectedRootsChooserDialog" timestamp="1597544823207">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="486" y="314" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1597544823206" />
+    <state width="1222" height="397" key="GridCell.Tab.0.bottom" timestamp="1597630813762">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597630813762" />
+    <state width="1222" height="332" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1597628302066" />
+    <state width="1222" height="397" key="GridCell.Tab.0.center" timestamp="1597630813759">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597630813759" />
+    <state width="1222" height="332" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1597628302063" />
+    <state width="1222" height="397" key="GridCell.Tab.0.left" timestamp="1597630813758">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597630813758" />
+    <state width="1222" height="332" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1597628302061" />
+    <state width="1222" height="397" key="GridCell.Tab.0.right" timestamp="1597630813760">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597630813760" />
+    <state width="1222" height="332" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1597628302065" />
+    <state width="1222" height="397" key="GridCell.Tab.1.bottom" timestamp="1597630813766">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597630813766" />
+    <state width="1222" height="332" key="GridCell.Tab.1.bottom/0.23.1440.797@0.23.1440.797" timestamp="1597628301767" />
+    <state width="1222" height="397" key="GridCell.Tab.1.center" timestamp="1597630813764">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1597630813764" />
+    <state width="1222" height="332" key="GridCell.Tab.1.center/0.23.1440.797@0.23.1440.797" timestamp="1597628301759" />
+    <state width="1222" height="397" key="GridCell.Tab.1.left" timestamp="1597630813763">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1597630813763" />
+    <state width="1222" height="332" key="GridCell.Tab.1.left/0.23.1440.797@0.23.1440.797" timestamp="1597628301758" />
+    <state width="1222" height="397" key="GridCell.Tab.1.right" timestamp="1597630813765">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1597630813765" />
+    <state width="1222" height="332" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1597628301766" />
+    <state width="1222" height="397" key="GridCell.Tab.2.bottom" timestamp="1597630813769">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597630813769" />
+    <state width="1222" height="332" key="GridCell.Tab.2.bottom/0.23.1440.797@0.23.1440.797" timestamp="1597628301773" />
+    <state width="1222" height="397" key="GridCell.Tab.2.center" timestamp="1597630813767">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1597630813767" />
+    <state width="1222" height="332" key="GridCell.Tab.2.center/0.23.1440.797@0.23.1440.797" timestamp="1597628301771" />
+    <state width="1222" height="397" key="GridCell.Tab.2.left" timestamp="1597630813767">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1597630813767" />
+    <state width="1222" height="332" key="GridCell.Tab.2.left/0.23.1440.797@0.23.1440.797" timestamp="1597628301769" />
+    <state width="1222" height="397" key="GridCell.Tab.2.right" timestamp="1597630813768">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1222" height="397" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1597630813768" />
+    <state width="1222" height="332" key="GridCell.Tab.2.right/0.23.1440.797@0.23.1440.797" timestamp="1597628301773" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1597449108760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597449108760" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1597382372862">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1597594106997">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1597382372862" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1597594106997" />
+    <state x="417" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1597618324161">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="417" y="321" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1597618324161" />
+    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1597630298748">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1597630298748" />
     <state x="114" y="84" key="new project wizard" timestamp="1597380880420">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="114" y="84" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1597380880420" />
-    <state x="385" y="223" key="search.everywhere.popup" timestamp="1597380615560">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="385" y="205" width="670" height="676" key="search.everywhere.popup" timestamp="1597614958487">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="385" y="205" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597614958487" />
     <state x="385" y="223" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1597380615560" />
   </component>
 </project>

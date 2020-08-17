@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet("/LoginUser")
 public class LoginUser extends HttpServlet {
@@ -57,9 +58,14 @@ public class LoginUser extends HttpServlet {
 		returnedUser = tempUser.loginUser(userdb);
 
 		if(returnedUser!=null) {
+
+			//fetch friends
+			List<User> friends = userdb.getFriends(returnedUser.getUserId());
+			returnedUser.setFriends(friends);
+
 			if(logpassword.contentEquals(returnedUser.getPassword())) {
 				session.setAttribute("user", returnedUser);
-				response.sendRedirect("/views/wall.jsp");
+				response.sendRedirect("/views/homeFeed.jsp");
 			}
 			else {
 				String result = "Invalid Username or Password!!";

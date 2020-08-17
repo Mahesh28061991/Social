@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Servlet implementation class CreateUser
@@ -19,8 +21,11 @@ import java.io.IOException;
 @WebServlet("/CreateUser")
 public class CreateUser extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
+
+	String[] dummyNames = new String[]{"Sheldon Cooper", "Raj Koothrapali", "Howard Wolowitz"};
+
+
+	/**
      * @see HttpServlet#HttpServlet()
      */
     public CreateUser() {
@@ -59,10 +64,11 @@ public class CreateUser extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		User tempUser = new User(fname,lname,email,password);
-		
+
 		boolean created = tempUser.createUser(userdb);
 		
 		if(created) {
+			addFriendsDefault(fname, lname);
 			String result = "SignUp Success..";
 			request.setAttribute("result",result);
 			String strViewPage="/index.jsp";
@@ -85,6 +91,18 @@ public class CreateUser extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	}
+
+
+	public void addFriendsDefault(String fname, String lname){
+
+		UserDBUtil userDBUtil = new UserDBUtil();
+		int userId = userDBUtil.getUserId(fname, lname);
+
+		userDBUtil.insertFriend(userId, 4);
+		userDBUtil.insertFriend(userId, 5);
+		userDBUtil.insertFriend(userId, 6);
+
 	}
 
 }
